@@ -1,1 +1,27 @@
 Document qui peut servir de liste des choses à faire ou modifier ¯\_(ツ)_/¯
+
+
+Résumé CaCoFold :
+
+1) RNA sequence alignment (input)
+
+2) R-scape => determines covariation between base pairs from the input alignment
+- positive base pairs have an E-value < 0.05
+- negative base pairs have a covariation power > 0.95 and E-value > 1
+
+3) maxCov algorithm => groups all positive bp in nested subset
+- use Nussinov algorithm => the first layer as the most positive bp, but the following layers are constituted of a subset of positive bp to form (not already present in the previoous layers), and a set of forbidden bp (all the negative bp and positive bp from previous layers).
+
+4) folding algorithm => calculates the most probable constrained nested structure.
+- different layers use different algorithm => RBG algorithm on first layer and modified G6 RNA model on the others (whose parameters are trained on RNA structure and sequences).
+- at each layer, CYK dynamic programming algorithm to determine the highest probable structure.
+
+5) filtering of alternative helices => complete RNA structure by removing redundancies without covariation support.
+
+6) display of the structure
+
+
+Plusieurs problèmes avec cet article
+- Donne les grandes lignes de l'algo, mais pas de détails concrets permettant une réimplémentation. D'ailleurs, la partie réimplementation de l'article ne donne que les lignes de commande utilisées pour faire fonctionner le programme CaCoFold. 
+- N'est pas un algorithme propre, mais un amalgame de plusieurs algorithmes pour arriver à certains résultats. Donc, si on veut une réimplementation complète et totale du programme, il faut réimplémenter au moins 7 articles au lieu de 1 seul => potentiellement impossible à faire en 1 mois et quelques, en considérant que ce sont des équipes professionnelles qui sont derrière tout ça (donc avec beaucoup plus d'expérience, de rapidité, etc.).
+=> Peut-être demander aux profs s'ils veulent qu'on refasse le programme de 0, ou si on peut 'simplement' tester les résultats et déterminer leurs qualités par une simple utilisation du programme (donc on se concentre plus sur l'aspect critique de l'article pour le projet). 
