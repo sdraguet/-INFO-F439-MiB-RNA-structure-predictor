@@ -25,3 +25,11 @@ Plusieurs problèmes avec cet article
 - Donne les grandes lignes de l'algo, mais pas de détails concrets permettant une réimplémentation. D'ailleurs, la partie réimplementation de l'article ne donne que les lignes de commande utilisées pour faire fonctionner le programme CaCoFold. 
 - N'est pas un algorithme propre, mais un amalgame de plusieurs algorithmes pour arriver à certains résultats. Donc, si on veut une réimplementation complète et totale du programme, il faut réimplémenter au moins 7 articles au lieu de 1 seul => potentiellement impossible à faire en 1 mois et quelques, en considérant que ce sont des équipes professionnelles qui sont derrière tout ça (donc avec beaucoup plus d'expérience, de rapidité, etc.).
 => Peut-être demander aux profs s'ils veulent qu'on refasse le programme de 0, ou si on peut 'simplement' tester les résultats et déterminer leurs qualités par une simple utilisation du programme (donc on se concentre plus sur l'aspect critique de l'article pour le projet). 
+
+
+Comment déterminer la qualité des prédictions
+=> comparer avec la littérature (quelles structures on devrait retrouver dans tel type d'ARN, est-ce que ces structures sont présentes et est-ce que certaines structures supplémentaires sont présentes).
+=> comparer avec données msa provenant de Rfam, ZWD et une msa faite nous-même. 
+=> Chercher des structures 3D représentatives et comparer.
+=> Rfam donne MSA avec énormément de séquences, déterminer si capable de retrouver structure de consensus avec une plus petite MSA (genre en prenant x séquences aléatoires des données Rfam).
+=> Déterminer séquence consensus par code python, et déterminer structure avec autre algo (ViennARN).
