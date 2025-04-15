@@ -33,3 +33,8 @@ Comment déterminer la qualité des prédictions
 => Chercher des structures 3D représentatives et comparer.
 => Rfam donne MSA avec énormément de séquences, déterminer si capable de retrouver structure de consensus avec une plus petite MSA (genre en prenant x séquences aléatoires des données Rfam).
 => Déterminer séquence consensus par code python, et déterminer structure avec autre algo (ViennARN).
+
+OBJECTIFS
+=> Ecrire le mail pour les profs
+=> Chercher types d'ARN intéressants (très simples à très complexes)
+=> Lire l'article
