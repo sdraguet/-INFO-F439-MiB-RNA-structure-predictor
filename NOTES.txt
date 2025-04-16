@@ -35,6 +35,8 @@ Comment déterminer la qualité des prédictions
 => Déterminer séquence consensus par code python, et déterminer structure avec autre algo (ViennARN).
 
 OBJECTIFS
-=> Ecrire le mail pour les profs
 => Chercher types d'ARN intéressants (très simples à très complexes)
 => Lire l'article
+=> Se renseigner sur le type de présentation
+=> Voir comment faire des stats, estimer la qualité
+=> Décrire le fonctionnement du programme
