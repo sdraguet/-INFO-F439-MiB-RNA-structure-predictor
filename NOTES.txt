@@ -37,6 +37,5 @@ Comment déterminer la qualité des prédictions
 OBJECTIFS
 => Chercher types d'ARN intéressants (très simples à très complexes)
 => Lire l'article
-=> Se renseigner sur le type de présentation
 => Voir comment faire des stats, estimer la qualité
 => Décrire le fonctionnement du programme
